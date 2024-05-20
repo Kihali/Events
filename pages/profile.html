@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+
+    <!--link to stylesheet-->
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="/css/index.css">
+
+    <!--google fonts icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="navbar-container">
+        <nav>
+          <a href="/" class="logo">My<span>Events</span></a>
+  
+          <!--nav items list-->
+          <ul class="nav-links menuClosed">
+            <li><a href="/">Home</a></li>
+          <li><a href="/about">Create Event</a></li>
+          <li><a href="/contact">Tickets</a></li>
+          <li><a href="/profile">Profile</a></li>
+
+            <div class="btn-container">
+              <a href="/login"><button class="pry-btn">LOGOUT</button></a>
+              
+            </div>
+          </ul>
+  
+          <!--menu icons-->
+          <span class="material-symbols-outlined event-icon" id="menu-icon"> menu </span>
+        </nav>
+      </div>
+
+      <!--Account Information-->
+      <div class="section">
+        <div class="section-div">
+            <h1 class="page-title">Account Information</h1>
+
+            <div class="picture-section">
+                <h1>Profile Picture</h1>
+                <input type="file" class="profile-picture">
+            </div>
+
+            <!--Contact Information-->
+            <div class="contact-info">
+                <h1>Contact Information</h1>
+                <form action="">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Second Name">
+                    <input type="text" placeholder="Phone Number">
+                    <input type="email" placeholder="Email Address">
+                    <input type="text" placeholder="P.O BOX Address">
+                    <input type="text" placeholder="Website">
+                </form>
+            </div>
+
+            <button type="submit" class="pry-btn">Update</button>
+
+            
+        </div>
+      </div>
+
+      <section class="section footer">
+        <div class="section-div">
+            <h4>MyEvents &copy All Rights Reserved 2024</h4>
+        </div>
+    </section>
+
+    <!--links to script tags-->
+    <script src="/js/index.js"></script>
+    <script src="/js/profile.js"></script>
+</body>
+</html>

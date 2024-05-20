@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Event</title>
+
+    <!--link to stylesheet-->
+    <link rel="stylesheet" href="/css/create-event.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+
+    <!--google fonts icons-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="navbar-container">
+      <nav>
+        <a href="/" class="logo">My<span>Events</span></a>
+
+        <!--nav items list-->
+        <ul class="nav-links menuClosed">
+          <li><a href="/">Home</a></li>
+          <li><a href="/create-event">Create Event</a></li>
+          <li><a href="/my-events">My Events</a></li>
+          <li><a href="/profile">Profile</a></li>
+
+          <div class="btn-container">
+            <a href="/login"><button class="pry-btn">LOGOUT</button></a>
+          </div>
+        </ul>
+
+        <!--menu icons-->
+        <span class="material-symbols-outlined event-icon" id="menu-icon"> menu </span>
+      </nav>
+    </div>
+
+    <div class="section">
+        <div class="section-div">
+            <h1>Create Your Event Here</h1>
+            <h4>Add event details to let the attendees know what to expect.</h4>
+
+            <form action="">
+                <div class="event-image">
+                    <label for="">Event Banner</label>
+                    <input type="file" required>
+                </div>
+                <div class="event-title">
+                    <label for="">Event Title</label>
+                    <p class="title-desc">Be clear and precise about the event</p>
+                    <input type="text" required>
+                </div>
+                <div class="event-desc">
+                    <label for="">Description</label>
+                    <p class="title-desc">Tell the people what the event is about and the necessary details they need to know. (150 characters max)</p>
+                    <textarea name="" required maxlength="150"></textarea>
+                </div>
+                <div class="date-and-time">
+                    <label for="">Date and time</label>
+                        <input type="date" required>
+                        <input type="text" required placeholder="Start time">
+                        <input type="text" required placeholder="End time">
+                </div>
+                <div class="location">
+                    <label for="">Location</label>
+                    <div>
+                        <button class="sec-btn">Venue</button>
+                        <button class="sec-btn">Virtual</button>
+                    </div>
+                    <input type="text" placeholder="location">
+                </div>
+                <button class="pry-btn submit-btn">Save and create</button>
+            </form>
+
+        </div>
+    </div>
+
+    <!--links to script tags-->
+    <script src="/js/index.js"></script>
+    <script src="/js/create-event.js"></script>
+  </body>
+</html>
