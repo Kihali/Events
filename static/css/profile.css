@@ -1,0 +1,25 @@
+h1{
+    color: var(--primary);
+    font-weight: 500;
+}
+.page-title{
+    color: var(--foreground);
+    margin: 30px 0;
+}
+
+
+.profile-picture{
+    width: 200px;
+    height: 250px;
+}
+
+.contact-info{
+    margin: 30px 0;
+    width: 100%;
+}
+.contact-info form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 10px 0;
+}

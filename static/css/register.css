@@ -1,0 +1,38 @@
+.section{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.section-container{
+    width: 50%;
+}
+form{
+    display: grid;
+    gap: 20px;
+}
+.form-div{
+    display: grid;
+    gap: 10px;
+}
+.form-div button{
+    width: 30%;
+    margin: auto;
+
+}
+form h1{
+    text-align: center;
+    font-weight: 400;
+    color: var(--primary);
+}
+form p{
+    text-align: center;
+}
+form p a{
+    color: var(--primary);
+}
+
+@media only screen and (max-width: 630px) {
+    .section-container{
+        width: 90%;
+    }
+}
