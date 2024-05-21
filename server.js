@@ -37,7 +37,7 @@ app.use(express.static(staticFilesDirectory));
 
 // Basic route
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'pages', 'home.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, 'pages', 'login.html'));
