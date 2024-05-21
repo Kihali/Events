@@ -54,6 +54,9 @@ app.get('/create-event', (req, res) => {
 app.get('/my-events', (req, res) => {
     res.sendFile(path.join(__dirname, 'pages', 'my-events.html'));
 });
+app.get('/event', (req, res) => {
+    res.sendFile(path.join(__dirname, 'pages', 'event.html'));
+});
 
 
 

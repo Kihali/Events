@@ -1,40 +1,10 @@
-.header-section {
-  height: 100vh;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  background: linear-gradient(rgba(1, 1, 1, 0.7), rgba(1, 1, 1, 0.7)),
-    url("../images/event-banner.jpg");
-  background-position: center;
-  background-size: cover;
+.myevents-btn-container{
+    width: 100%;
+    display: flex;
+    margin-top: 40px;;
+    justify-content: center;
+    gap: 10px;
 }
-.header-section .section-div h1 {
-  background: transparent;
-  color: var(--primary);
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 500;
-}
-
-.search-section,
-.section-div {
-  margin: auto;
-  display: flex;
-  gap: 5px;
-  justify-content: center;
-}
-.search-section .section-div input {
-  width: 60%;
-}
-@media only screen and (max-width: 500px){
-    .header-section .section-div h1{
-      font-size: 2rem;
-    }
-}
-
-
-
 .event-title {
   font-size: 1.5rem;
   overflow: hidden;
@@ -44,16 +14,16 @@
   -webkit-box-orient: vertical;
 }
 .event-img {
-  height: 250px;
+  height: 200px;
   width: 100%;
   object-fit: cover;
   border-bottom: 1px solid lightgray;
 }
 /* .event-img:hover{
-    transform: scale(110%);
-} */
+      transform: scale(110%);
+  } */
 .events-wrapper {
-  margin: 20px;
+  margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
@@ -70,22 +40,26 @@
   flex-direction: column;
   gap: 5px;
 }
+.event-btns {
+  width: 100%;
+  display: grid;
+  gap: 5px;
+}
 .event-date,
 .event-time,
 .event-location,
-.event-icon{
-    color: gray;
-    font-size: 0.8rem;
-    display: flex;
-    margin: auto 0;
-    gap: 5px;
+.event-icon {
+  color: gray;
+  font-size: 0.8rem;
+  display: flex;
+  margin: auto 0;
+  gap: 5px;
 }
-.date-time-loc{
-    display: grid;
-    margin-top: 5px;
-    gap: 5px;
+.date-time-loc {
+  display: grid;
+  margin-top: 5px;
+  gap: 5px;
 }
-
 
 /* responsive section */
 @media only screen and (max-width: 1280px) {
@@ -102,6 +76,13 @@
   .events-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
+  .section .btn-container{
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    gap: 10px;
+}
 }
 @media only screen and (max-width: 550px) {
   .events-wrapper {

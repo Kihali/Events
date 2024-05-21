@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <!--link to stylesheet-->
+    <link rel="stylesheet" href="/css/my-events.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+
+    <!--google fonts icons-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="navbar-container">
+      <nav>
+        <a href="/" class="logo">My<span>Events</span></a>
+
+        <!--nav items list-->
+        <ul class="nav-links menuClosed">
+          <li><a href="/">Home</a></li>
+          <li><a href="/create-event">Create Event</a></li>
+          <li><a href="/my-events">My Events</a></li>
+          <li><a href="/profile">Profile</a></li>
+
+          <div class="btn-container">
+            <a href="/login"><button class="pry-btn">LOGIN</button></a>
+            <a href="/signup"><button class="sec-btn">SIGN UP</button></a>
+          </div>
+        </ul>
+
+        <!--menu icons-->
+        <span class="material-symbols-outlined event-icon" id="menu-icon"> menu </span>
+      </nav>
+    </div>
+
+    <section class="section">
+        <div class="section-div">
+            <div class="myevents-btn-container">
+                <button class="pry-btn">Attending</button>
+                <button class="sec-btn">Created</button>
+            </div>
+
+            <div class="events-section">
+                <div class="events-wrapper">
+
+                    <!--Events card-->
+                    <div class="event-card">
+                        <img src="/images/event-banner.jpg" alt="" class="event-img">
+                        <div class="event-details">
+                            <h3 class="event-title">
+                                <a href="">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem reiciendis, quaerat magnam accusantium dolorum voluptatum est tempore quo eveniet!
+                                </a>
+                            </h3>
+                            <!--Event date, time and location-->
+                            <div class="date-time-loc">
+                                <p class="event-date">
+                                    <span class="material-symbols-outlined event-icon">calendar_month</span>
+                                    December 20th
+                                </p>
+                                <p class="event-time">
+                                    <span class="material-symbols-outlined event-icon">schedule</span>
+                                    8:00AM - 5:00PM
+                                </p>
+                                <p class="event-location">
+                                    <span class="material-symbols-outlined event-icon">location_on</span>
+                                    Nairobi, CBD
+                                </p>
+                            </div>
+                            <div class="event-btns">
+                                <button class="pry-btn">Cancel</button>
+                                <button class="sec-btn">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--links to script tags-->
+    <script src="/js/index.js"></script>
+    <script src="/js/my-events.js"></script>
+  </body>
+</html>
