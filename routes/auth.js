@@ -1,6 +1,7 @@
 const router = require('express').Router()
 const User = require('../models/Users')
 const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken')
 
 
 // User registration route
@@ -60,8 +61,12 @@ router.post('/login', async (req, res) => {
             return res.status(400).json({ message: "Invalid email or password" })
         }
 
-        // create a session
-        req.session.userId = existingUser._id
+        // create a jwt token
+        const token = jwt.sign(
+            { _id: existingUser._id },
+            process.env.JWT_SECRET,
+            { expiresIn: '10sec' }
+        )
 
         // successful user login message
         res.status(200).json({ message: `${req.body.email} successfully logged in` })
