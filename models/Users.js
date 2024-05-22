@@ -2,9 +2,11 @@ const mongoose = require('mongoose')
 
 
 const UsersSchema = new mongoose.Schema({
-    name: { type: String, required: true },
+    firstName: { type: String, required: true },
+    secondName: { type: String, required: true },
+    phoneNumber: { type: String },
+    poBox: { type: String },
     email: { type: String, required: true, unique: true },
-    role: { type: String, enum: ["Event Attendee", "Event Organizer"] },
     password: { type: String, required: true }
 }, { timeStamps: true })
 
