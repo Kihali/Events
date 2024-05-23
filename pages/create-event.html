@@ -43,36 +43,45 @@
             <h1>Create Your Event Here</h1>
             <h4>Add event details to let the attendees know what to expect.</h4>
 
-            <form action="">
+            <form action="" id="create-event-form" enctype="multipart/form-data">
                 <div class="event-image">
                     <label for="">Event Banner</label>
-                    <input type="file" required>
+                    <input type="file" required id="img-input">
                 </div>
                 <div class="event-title">
                     <label for="">Event Title</label>
                     <p class="title-desc">Be clear and precise about the event</p>
-                    <input type="text" required>
+                    <input type="text" required id="title-input">
                 </div>
                 <div class="event-desc">
                     <label for="">Description</label>
                     <p class="title-desc">Tell the people what the event is about and the necessary details they need to know. (150 characters max)</p>
-                    <textarea name="" required maxlength="150"></textarea>
+                    <textarea name="" required maxlength="150" id="desc-input"></textarea>
                 </div>
                 <div class="date-and-time">
                     <label for="">Date and time</label>
                         <input type="date" required>
-                        <input type="text" required placeholder="Start time">
-                        <input type="text" required placeholder="End time">
+                        <input type="text" required placeholder="Start time" id="start-time-input">
+                        <input type="text" required placeholder="End time" id="end-time-input">
                 </div>
-                <div class="location">
+                <!-- <div class="location">
                     <label for="">Location</label>
                     <div>
-                        <button class="sec-btn">Physical</button>
-                        <button class="sec-btn">Virtual</button>
+                        <button class="sec-btn" id="physical-btn">Physical</button>
+                        <button class="sec-btn" id="virtual-btn">Virtual</button>
                     </div>
-                    <input type="text" placeholder=" Search location">
-                    <input type="text" placeholder="Event Link">
-                </div>
+                    <input type="text" placeholder=" Search location" id="location-input">
+                    <input type="text" placeholder="Event Link" id="link-input">
+                </div> -->
+
+                <div class="location">
+                  <label for="">Price</label>
+                  <input type="number" placeholder="Price" required id="price-input">
+              </div>
+              <div class="location">
+                <label for="">Number of Attendees</label>
+                <input type="number" placeholder="Number of attendees" required id="attendees-input">
+            </div>
                 <button class="pry-btn submit-btn">Save and create</button>
             </form>
 
