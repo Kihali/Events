@@ -31,7 +31,7 @@ router.get('/:category', async (req, res) => {
 })
 
 // get events based on id
-router.get('/id/:id', async (req, res) => {
+router.get('/:id', async (req, res) => {
     try{
         const id = req.params.id
 
@@ -56,7 +56,7 @@ router.get('/id/:id', async (req, res) => {
 })
 
 // get events based on title
-router.get('//title/:title', async (req, res) => {
+router.get('/:title', async (req, res) => {
     try{
         const title = req.params.title
 
@@ -76,11 +76,11 @@ router.get('//title/:title', async (req, res) => {
 
 // Endpoints to create update and delete
 // Create new event
-router.post('/create', async (req, res) => {
+router.post('/create-event', async (req, res) => {
     try{
-        const { title, category, description, image, maxAttendees } = req.body
+        const { title, description, image, maxAttendees, price, link, location, date, startTime, endTime } = req.body
 
-        const newEvent = new Event ({ title, category, description, image, maxAttendees })
+        const newEvent = new Event ({ title, description, image, maxAttendees, price, link, location, date, startTime, endTime })
 
         // save the event in the database
         const savedEvent = await newEvent.save()
@@ -94,53 +94,77 @@ router.post('/create', async (req, res) => {
 
 router.put('/update/:id', async (req, res) => {
     try {
-        const eventId = req.params.id;
-        const { title, category, description, image, maxAttendees } = req.body;
+        const eventId = req.params.id
 
-        // Check if the provided ID is a valid MongoDB ObjectId
-        if (!mongoose.Types.ObjectId.isValid(eventId)) {
-            return res.status(400).json({ message: 'Invalid event ID' });
+        // extract the user Id from the JWT token request header
+        const token = req.headers.authorization.split(' ')[1];
+        const decodedToken = jwt.verify(token, process.env.JWT_SECRET);
+        const userId = decodeToken._id;
+
+        //find the event by ID
+        const event = await Event.findById(eventId);
+
+        //check if the event exists
+        if(!event){
+            res.status(404).json({ message: "Event not found " })
         }
 
-        // Find the event by ID and creator
-        const event = await Event.findOne({ _id: eventId, createdById: req.user._id });
-
-        // Check if the event exists and the user is the creator
-        if (!event) {
-            return res.status(403).json({ message: 'Unauthorized: You are not the creator of this event or event not found' });
+        // check if the user id matches the creators id of the event
+        if(event.creator.toString() !== userId) {
+            return res.status(403).json({ message: "Only the creator can update the event" })
         }
 
-        // Update the event using findByIdAndUpdate
-        const updatedEvent = await Event.findByIdAndUpdate(eventId, {
-            title,
-            category,
-            description,
-            image,
-            maxAttendees
-        }, { new: true });
+        // Update the event within the new date
+        event.title = req.body.title || event.title;
+        event.description = req.body.description || event.description;
+        event.image = req.body.image || event.image;
+        event.maxAttendees = req.body.maxAttendees || event.maxAttendees;
+        event.price = req.body.price || event.price;
+        event.link = req.body.link || event.link;
+        event.location = req.body.location || event.location;
+        event.date = req.body.date || event.date;
+        event.startTime = req.body.startTime || event.startTime;
+        event.endTime = req.body.endTime || event.endTime;
 
-        // Check if the event was successfully updated
-        if (!updatedEvent) {
-            return res.status(404).json({ message: 'Event not found' });
-        }
+        // save the updated event
+        const updatedEvent = await event.save()
 
-        res.status(200).json({ event: updatedEvent });
+        // respond with the updated event
+        res.status(200).json({ message: err.message })
+
     } catch (err) {
-        res.status(500).json({ message: err.message });
+        res.status(500).json({ message: err.message })
     }
 });
 
 
 // endpoint to delete the events
 router.delete('/delete/:id', async (req, res) => {
-    const eventId = req.params.id
+    try {
+        const eventId = req.params.id
 
-    // Check if the provided ID is a valid MongoDB ObjectId
-    if (!mongoose.Types.ObjectId.isValid(eventId)) {
-        return res.status(400).json({ message: 'Invalid event ID' });
+        // Extract the userID from jwt token in the request header
+        const token = req.headers.authorization.split(' ')[1];
+        const decodedToken = jwt.verify(token, process.env.JWT_SECRET);
+        const userId = decodedToken._id;
+
+        // Find event by ID
+        const event = await Event.findById(eventId)
+
+        //check if event exists
+        if(!event) {
+            return res.status(403).json({ message: 'Only the creator can delete the event' });
+        }
+
+        // delete the event
+        await event.remove()
+
+        //respond with a success message
+        res.status(200).json({ message: 'Event deleted successfully' })
+
+    } catch (err) {
+        res.status(500).json({ message: err.message })
     }
-
-
 })
 
 
