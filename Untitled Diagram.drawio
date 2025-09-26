@@ -1,0 +1,174 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.5">
+  <diagram name="Page-1" id="jCF6cWym6ZISF3htjZgI">
+    <mxGraphModel dx="872" dy="431" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-4" value="Skilled Nursing Facility (Paper-Based)" style="text;whiteSpace=wrap;html=1;fontStyle=1;align=center;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="270" y="10" width="390" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" edge="1" parent="1" source="yT-Klkm7-cQI-4UnZzhd-8" target="yT-Klkm7-cQI-4UnZzhd-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-8" value="&#xa;Admission&#xa;&#xa;" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="80" y="90" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-9" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="115" y="30" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" edge="1" parent="1" source="yT-Klkm7-cQI-4UnZzhd-13" target="yT-Klkm7-cQI-4UnZzhd-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-13" value="&lt;br&gt;Patient admitted with hospital discharge summary/transfer note&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="360" y="100" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" edge="1" parent="1" source="yT-Klkm7-cQI-4UnZzhd-15" target="yT-Klkm7-cQI-4UnZzhd-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-15" value="&lt;br&gt;Nurse receives paperwork and hospital medication list&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="395" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" edge="1" parent="1" source="yT-Klkm7-cQI-4UnZzhd-17" target="yT-Klkm7-cQI-4UnZzhd-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-17" value="&lt;br&gt;Physician reviews transfer orders&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="395" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" edge="1" parent="1" source="yT-Klkm7-cQI-4UnZzhd-19" target="yT-Klkm7-cQI-4UnZzhd-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-19" value="&lt;br&gt;Nurse interviews patient/family for additional home medications&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="380" y="390" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" edge="1" parent="1" source="yT-Klkm7-cQI-4UnZzhd-21" target="yT-Klkm7-cQI-4UnZzhd-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" edge="1" parent="1" source="yT-Klkm7-cQI-4UnZzhd-21" target="yT-Klkm7-cQI-4UnZzhd-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-21" value="&#xa;&lt;strong data-start=&quot;1827&quot; data-end=&quot;1840&quot;&gt;Decision:&lt;/strong&gt; Are there discrepancies between lists?&#xa;&#xa;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="370" y="490" width="170" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-23" value="&lt;br&gt;Nurse/Physician contact hospital or pharmacy; update chart&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="620" y="500" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-25" value="Yes&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="560" y="520" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" edge="1" parent="1" source="yT-Klkm7-cQI-4UnZzhd-26" target="yT-Klkm7-cQI-4UnZzhd-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-26" value="&lt;br&gt;Consolidated med list finalized in &lt;strong data-start=&quot;2029&quot; data-end=&quot;2044&quot;&gt;paper chart&lt;/strong&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="165" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-28" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="300" y="520" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" edge="1" parent="1" source="yT-Klkm7-cQI-4UnZzhd-30" target="yT-Klkm7-cQI-4UnZzhd-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-30" value="&#xa;Transfer&#xa;&#xa;" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;fillColor=light-dark(#60A917,#89F90E);fontColor=#ffffff;strokeColor=#2D7600;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="165" y="650" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" edge="1" parent="1" source="yT-Klkm7-cQI-4UnZzhd-32" target="yT-Klkm7-cQI-4UnZzhd-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-32" value="&#xa;Physician writes transfer order for new unit/level of care&#xa;&#xa;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="410" y="660" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" edge="1" parent="1" source="yT-Klkm7-cQI-4UnZzhd-34" target="yT-Klkm7-cQI-4UnZzhd-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-34" value="&#xa;Nurse reviews paper chart med list&#xa;&#xa;" style="whiteSpace=wrap;html=1;rounded=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="430" y="780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" edge="1" parent="1" source="yT-Klkm7-cQI-4UnZzhd-36" target="yT-Klkm7-cQI-4UnZzhd-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yT-Klkm7-cQI-4UnZzhd-36" target="yT-Klkm7-cQI-4UnZzhd-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-36" value="&#xa;&lt;strong data-start=&quot;2175&quot; data-end=&quot;2188&quot;&gt;Decision:&lt;/strong&gt; Are medication changes required for new level of care?&#xa;&#xa;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="390" y="910" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-38" value="&lt;br&gt;Physician writes new orders; nurse transcribes; notify pharmacy&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="660" y="940" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-40" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="610" y="940" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yT-Klkm7-cQI-4UnZzhd-44" target="yT-Klkm7-cQI-4UnZzhd-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yT-Klkm7-cQI-4UnZzhd-44" target="yT-Klkm7-cQI-4UnZzhd-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-44" value="No" style="triangle;whiteSpace=wrap;html=1;fontSize=13;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="930" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-46" value="&lt;br&gt;Pharmacy reviews high-risk meds if available&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="220" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yT-Klkm7-cQI-4UnZzhd-48" target="yT-Klkm7-cQI-4UnZzhd-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-48" value="&#xa;Updated paper chart confirmed&#xa;&#xa;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="220" y="1060" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yT-Klkm7-cQI-4UnZzhd-50" target="yT-Klkm7-cQI-4UnZzhd-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-50" value="&#xa;Discharge&#xa;&#xa;" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=13;rounded=1;fillColor=light-dark(#008A00,#A7FFF0);fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
+          <mxGeometry x="220" y="1170" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yT-Klkm7-cQI-4UnZzhd-52" target="yT-Klkm7-cQI-4UnZzhd-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-52" value="&#xa;Physician writes discharge medication orders by hand&#xa;&#xa;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=13;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="1180" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yT-Klkm7-cQI-4UnZzhd-54" target="yT-Klkm7-cQI-4UnZzhd-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-54" value="&#xa;Nurse transcribes into discharge instructions&#xa;&#xa;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="445" y="1290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yT-Klkm7-cQI-4UnZzhd-58" target="yT-Klkm7-cQI-4UnZzhd-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yT-Klkm7-cQI-4UnZzhd-58" target="yT-Klkm7-cQI-4UnZzhd-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-65" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=21;" vertex="1" connectable="0" parent="yT-Klkm7-cQI-4UnZzhd-64">
+          <mxGeometry x="-0.0727" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-58" value="&#xa;&lt;strong data-end=&quot;2593&quot; data-start=&quot;2580&quot;&gt;Decision:&lt;/strong&gt; Is clarification needed?&#xa;&#xa;" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="1390" width="170" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-60" value="&lt;br&gt;Contact hospital or pharmacy; update list&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=13;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="695" y="1420" width="165" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-62" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="625" y="1420" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yT-Klkm7-cQI-4UnZzhd-63" target="yT-Klkm7-cQI-4UnZzhd-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-63" value="&#xa;Nurse educates patient/family and provides written med list&#xa;&#xa;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="420" y="1620" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-71" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yT-Klkm7-cQI-4UnZzhd-66" target="yT-Klkm7-cQI-4UnZzhd-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-66" value="&#xa;Copy of discharge med list faxed/sent to PCP or receiving facility&#xa;&#xa;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="410" y="1760" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT-Klkm7-cQI-4UnZzhd-70" value="&#xa;Patient leaves with written med list&#xa;&#xa;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fontSize=13;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="445" y="1890" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
